@@ -1,7 +1,24 @@
 import React from 'react';
 
 export class Table extends React.Component {
+
 	render() {
+		const words = this.props.wordMatchArray;
+		const tableRows = words.map( (elem, index) => {
+			let sentenceConcat = '';
+			elem.sentences.forEach( (sentence, sentenceIndex) => {
+				sentenceConcat += `Sentence ${sentenceIndex+1}: ${elem.sentences[sentenceIndex]} `;
+			});
+			return (
+				<tr key={index}>
+					<td>{elem.item}</td>
+					<td>{elem.occurances}</td>
+					<td>
+						{sentenceConcat}
+					</td>
+				</tr>
+			);
+		})
 		return (
 			<table className="u-full-width">
 			  <thead>
@@ -12,11 +29,7 @@ export class Table extends React.Component {
 			    </tr>
 			  </thead>
 			  <tbody>
-			    <tr>
-			      <td>example</td>
-			      <td>3</td>
-			      <td>Sentence 1: 2, Sentence 2: 1</td>
-			    </tr>
+			    {tableRows}
 			  </tbody>
 			</table>
 		);

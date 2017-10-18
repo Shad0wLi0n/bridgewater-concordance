@@ -40,6 +40,6 @@ textarea {
   height: 250px;
 }
 
-tbody tr:nth-child(n+1) {
-  /*background: #ccc;*/
+td, th {
+  text-align: center;
 }
