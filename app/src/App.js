@@ -67,9 +67,6 @@ class App extends Component {
       });
       wordMatchArray.push(wordObject);
     });
-    console.log(wordMatchArray[0]);
-    console.log(sentenceArray);
-    console.log(filteredArray);
     this.setState({
       filteredArray: filteredArray, 
       numberOfSentences: numberOfSentences,
