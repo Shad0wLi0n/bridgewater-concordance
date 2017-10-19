@@ -8,6 +8,9 @@ export class Table extends React.Component {
 			let sentenceConcat = '';
 			elem.sentences.forEach( (sentence, sentenceIndex) => {
 				sentenceConcat += `Sentence ${sentenceIndex+1}: ${elem.sentences[sentenceIndex]} `;
+				if (sentenceIndex < elem.sentences.length - 1) {
+					sentenceConcat += `| `;
+				}
 			});
 			return (
 				<tr key={index}>
