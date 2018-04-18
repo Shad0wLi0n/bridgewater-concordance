@@ -15,9 +15,9 @@ The app is divided into 4 components:
 ## Installation:
 
 1. Clone the repository. In your terminal type:
-#### `git clone git@github.com:Shad0wLi0n/bridgewater-concordance.git`
+#### `git clone git@github.com:Shad0wLi0n/concordance.git`
 2. Navigate to the app directory:
-#### `cd bridgewater-concordance/app`
+#### `cd concordance/app`
 3. Install the project:
 #### `npm install`
 
