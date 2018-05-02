@@ -2,6 +2,12 @@
 
 ### Thanks for taking a look, installation instructions and a brief overview follow below.
 
+## Overview:
+
+What the program does.
+
+Given an arbitrary text document written in English, write a program that will generate a concordance, i.e. an alphabetical list of all word occurrences, labeled with word frequencies. Bonus: label each word with the sentence numbers in which each occurrence appeared.
+
 ## Notes:
 
 The project was written in the react framework and bootstrapped using [Create React App](https://github.com/facebookincubator/create-react-app). I made use of the [Skeleton CSS Boilerplate](http://getskeleton.com/) as well. As a Front End Developer, I believe a clean, simple UI is just as important as a thorough solution. The application is fully responsive.
